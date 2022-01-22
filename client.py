@@ -1,7 +1,7 @@
 import pyautogui
 import time
 import json
-import keyboard
+# import keyboard
 
 MIN = 60 
 SEC = 1
@@ -13,13 +13,13 @@ class BombCryptoAutoClick:
     self.sleep_timer = config['sleep']
     pass
 
-  def is_stop(self):
-    try:
-      if(keyboard.is_pressed('q')):
-        return True
-      return False
-    except:
-      return False
+  # def is_stop(self):
+  #   try:
+  #     if(keyboard.is_pressed('q')):
+  #       return True
+  #     return False
+  #   except:
+  #     return False
       
 
   def click_button(self,position):
